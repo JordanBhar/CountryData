@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" th:href="@{css/main.css}" href="../static/css/main.css">
+    <link rel="stylesheet" href="https://unpkg.com/purecss@2.0.6/build/pure-min.css" integrity="sha384-Uu6IeWbM+gzNVXJcM9XV3SohHtmWE+3VGi496jvgX1jyvDTXfdK+rfZc8C1Aehk5" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://unpkg.com/purecss@2.0.6/build/grids-responsive-min.css" />
+</head>
+<body class="pure-g">
+
+
+<div class="pure-u-1" id="Header">
+    <p id="pageTitle">Country Data List</p>
+</div>
+
+
+<div class="pure-u-1-5 empty"></div>
+
+<div class="pure-u-3-5 container">
+
+    <table class="pure-table pure-table-horizontal">
+        <thead>
+        <tr>
+            <th>ID</th>
+            <th>Country Name</th>
+            <th>Population Count</th>
+            <th>Continent</th>
+            <th>Options</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr th:each="s,c: ${country}">
+            <td th:text="${c.count}">1</td>
+            <td th:text="${s.countryName}">Bart</td>
+            <td th:text="${s.population}">Bart</td>
+            <td th:text="${s.continent}">Simpson</td>
+
+            <td>
+                <a href="CountryDetails.html" th:href="@{country-details(id=${s.id})}" class="pure-button" >Details</a>
+            </td>
+        </tr>
+        </tbody>
+    </table>
+
+
+
+
+</div>
+
+<div class="pure-u-1-5 empty"></div>
+
+</body>
+</html>

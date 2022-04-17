@@ -1,0 +1,75 @@
+
+body{
+    height: 950px;
+    background: #76a2de;
+}
+
+#buttonContainerList{
+
+    margin-top: 2em;
+    margin-left: 2em ;
+
+}
+
+#buttonContainer{
+
+    margin-top: 2em;
+
+}
+
+
+#Header{
+    height: 100px;
+    background: rgba(40, 42, 44, 0.6);
+    border-radius: 1%;
+
+}
+
+#addPetForm{
+    margin-top:1em;
+    margin-left: 2em;
+
+}
+
+.gender{
+    margin-top: 1em ;
+}
+
+
+#pageTitle{
+    margin-top: 2em;
+    margin-left: 2em;
+    font-size: x-large;
+    color: white;
+}
+
+
+#petDataTable{
+    display: grid;
+    justify-content: center;
+    width: auto;
+}
+
+#vaccinated{
+    margin-top: 1em;
+}
+
+.container{
+    margin-top: 1em;
+    background: rgba(40, 42, 44, 0.6);
+}
+
+.empty{
+    height: 100%;
+}
+
+table{
+    margin-top: 1em;
+    margin-left: 2em;
+    margin-right:2em ;
+    margin-bottom: 2em;
+    border-collapse: collapse;
+    border: 1px solid black;
+    width: fit-content;
+    padding: .5em;
+}
